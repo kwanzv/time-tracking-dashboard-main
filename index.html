@@ -27,15 +27,15 @@
   </head>
 
   <body class="bg-slate-800 min-h-screen flex items-center justify-center">
-    <div class="dashboard-wrapper flex flex-col md:grid md:grid-cols-3 lg:grid-cols-4 md:grid-rows-2  gap-6 p-8 overflow-hidden">
+    <div class="dashboard-wrapper flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 gap-6 w-3/4">
              <!-- User card -->
 
-      <div class="user-card flex flex-col bg-indigo-900 rounded-xl pb-4 md:row-span-2 sm:mt-16 md:mt-0">
-        <div class="avatar-row flex md:flex-col bg-indigo-600 p-2 rounded-xl text-white pb-8">
+      <div class="user-card flex flex-col bg-indigo-900 rounded-xl pb-4 md:row-span-2 sm:mt-16 md:mt-0 min-w-96">
+        <div class="avatar-row flex md:flex-col bg-indigo-600 p-2 rounded-xl text-white pb-8 h-1/2">
           <img src="images/image-jeremy.png" class="h-24 md:w-24 border border-white rounded-full border-6" alt="" />
-          <div class="text-wrapper flex flex-col justify-center ml-4">
+          <div class="text-wrapper flex flex-col justify-center ml-4 my-6">
             <p class="text-gray-300">Report for</p>
-            <p class="text-2xl">Jeremy Robson</p>
+            <p class="text-4xl">Jeremy <br> Robson</p>
           </div>
         </div>
         <div
@@ -47,102 +47,102 @@
       </div>
       
        <!-- Work card -->
-      <div class="work-card flex flex-col bg-indigo-900 rounded-xl min-w-96">
+      <div class="work-card flex flex-col bg-indigo-900 rounded-xl  pb-4 ">
       <div class="work-header flex justify-end bg-orange-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-work.svg" class="opacity-50 mr-4" alt="" />
       </div>
-      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white hover:bg-indigo-600 h-full">
+      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex md:flex-col md:items-start items-center justify-between text-white relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Work</p>
           <p class="text-4xl">32hrs</p>
         </div>
-        <div class="time-prev flex flex-col items-end gap-6 p-4">
-          <p><img src="images/icon-ellipsis.svg" alt=""></p>
+        <div class="time-prev flex flex-col items-end gap-6 p-4 ">
+          <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
           <p class="text-slate-300 font-semi-bold">Last week - 36hrs</p>
         </div>
       </div>
     </div>
        <!-- Play  card -->
 
-      <div class="play-card flex flex-col bg-indigo-900 rounded-xl min-w-96">
+      <div class="play-card flex flex-col bg-indigo-900 rounded-xl min-w-96 pb-4">
       <div class="work-header flex justify-end bg-cyan-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-play.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
-      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white hover:bg-indigo-600 h-full">
+      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Play</p>
           <p class="text-4xl">10hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
-          <p><img src="images/icon-ellipsis.svg" alt=""></p>
+          <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
           <p class="text-slate-300 font-semi-bold">Last week - 8hrs</p>
         </div>
       </div>
     </div>
        <!-- study card card -->
 
-      <div class="study-card flex flex-col bg-indigo-900 rounded-xl min-w-96">
+      <div class="study-card flex flex-col bg-indigo-900 rounded-xl min-w-96 pb-4">
       <div class="work-header flex justify-end bg-red-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-study.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
-      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white hover:bg-indigo-600 h-full">
+      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Study</p>
           <p class="text-4xl">4hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
-          <p><img src="images/icon-ellipsis.svg" alt=""></p>
+          <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
           <p class="text-slate-300 font-semi-bold">Last week - 7hrs</p>
         </div>
       </div>
     </div>
        <!-- Exercise card card -->
 
-      <div class="exercise-card flex flex-col bg-indigo-900 rounded-xl min-w-96">
+      <div class="exercise-card flex flex-col bg-indigo-900 rounded-xl min-w-96 pb-4">
       <div class="work-header flex justify-end bg-green-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-exercise.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
-      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white hover:bg-indigo-600 h-full">
+      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Exercise</p>
           <p class="text-4xl">4hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
-          <p><img src="images/icon-ellipsis.svg" alt=""></p>
+          <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
           <p class="text-slate-300 font-semi-bold">Last week - 5hrs</p>
         </div>
       </div>
     </div>
        <!-- Social card card -->
 
-      <div class="Social-card flex flex-col bg-indigo-900 rounded-xl min-w-96 ">
+      <div class="Social-card flex flex-col bg-indigo-900 rounded-xl min-w-96 pb-4">
       <div class="work-header flex justify-end bg-purple-600 rounded-t-xl z-0 h-16">
         <img src="images/icon-Social.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
-      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white hover:bg-indigo-600 h-full">
+      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Social</p>
           <p class="text-4xl">5hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
-          <p><img src="images/icon-ellipsis.svg" alt=""></p>
+          <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
           <p class="text-slate-300 font-semi-bold">Last week - 10hrs</p>
         </div>
       </div>
     </div>
        <!-- Self Care card card -->
 
-      <div class="Self-Care-card flex flex-col bg-indigo-900 rounded-xl min-w-96 ">
+      <div class="Self-Care-card flex flex-col bg-indigo-900 rounded-xl min-w-96 pb-4">
       <div class="work-header flex justify-end bg-yellow-200 rounded-t-xl z-0 h-16">
         <img src="images/icon-self-care.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
-      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white hover:bg-indigo-600 h-full">
+      <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Self Care</p>
           <p class="text-4xl">2hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
-          <p><img src="images/icon-ellipsis.svg" alt=""></p>
+          <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
           <p class="text-slate-300 font-semi-bold">Last week - 2hrs</p>
         </div>
       </div>
