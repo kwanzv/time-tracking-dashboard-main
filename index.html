@@ -11,7 +11,9 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Time tracking dashboard</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -41,113 +43,113 @@
         <div
           class="period-row flex justify-between p-4 text-slate-500 font-semibold md:flex-col md:items-start md:gap-4"
         >
-          <button class="hover:text-white">Daily</button><button class="hover:text-white">Weekly</button
-          ><button class="hover:text-white">Monthly</button>
+          <button class="hover:text-white active" id="daily">Daily</button><button class="hover:text-white" id="weekly">Weekly</button
+          ><button class="hover:text-white" id="monthly">Monthly</button>
         </div>
       </div>
       
        <!-- Work card -->
-      <div class="work-card flex flex-col bg-indigo-900 rounded-xl pb-4 ">
+      <div class="work-card card flex flex-col bg-indigo-900 rounded-xl pb-4 ">
       <div class="work-header flex justify-end bg-orange-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-work.svg" class="opacity-50 mr-4" alt="" />
       </div>
       <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex md:flex-col md:items-start items-center justify-between text-white relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Work</p>
-          <p class="text-4xl">32hrs</p>
+          <p class="text-4xl" id="work-hours">32hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4 ">
           <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
-          <p class="text-slate-300 font-semi-bold">Last week - 36hrs</p>
+          <p class="text-slate-300 font-semi-bold" id="prev-work">Last week - 36hrs</p>
         </div>
       </div>
     </div>
        <!-- Play  card -->
 
-      <div class="play-card  flex flex-col bg-indigo-900 rounded-xl pb-4">
+      <div class="play-card card flex flex-col bg-indigo-900 rounded-xl pb-4">
       <div class="work-header flex justify-end bg-cyan-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-play.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
       <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Play</p>
-          <p class="text-4xl">10hrs</p>
+          <p class="text-4xl " id="play-hours">10hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
           <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
-          <p class="text-slate-300 font-semi-bold">Last week - 8hrs</p>
+          <p class="text-slate-300 font-semi-bold" id="prev-play">Last week - 8hrs</p>
         </div>
       </div>
     </div>
        <!-- study card card -->
 
-      <div class="study-card  flex flex-col bg-indigo-900 rounded-xl pb-4">
+      <div class="study-card card flex flex-col bg-indigo-900 rounded-xl pb-4">
       <div class="work-header flex justify-end bg-red-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-study.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
       <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Study</p>
-          <p class="text-4xl">4hrs</p>
+          <p class="text-4xl "id="study-hours">4hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
           <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
-          <p class="text-slate-300 font-semi-bold">Last week - 7hrs</p>
+          <p class="text-slate-300 font-semi-bold" id="prev-study">Last week - 7hrs</p>
         </div>
       </div>
     </div>
        <!-- Exercise card card -->
 
-      <div class="exercise-card  flex flex-col bg-indigo-900 rounded-xl pb-4">
+      <div class="exercise-card card flex flex-col bg-indigo-900 rounded-xl pb-4">
       <div class="work-header flex justify-end bg-green-400 rounded-t-xl z-0 h-16">
         <img src="images/icon-exercise.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
       <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Exercise</p>
-          <p class="text-4xl">4hrs</p>
+          <p class="text-4xl "id="exercise-hours">4hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
           <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
-          <p class="text-slate-300 font-semi-bold">Last week - 5hrs</p>
+          <p class="text-slate-300 font-semi-bold" id="prev-exercise">Last week - 5hrs</p>
         </div>
       </div>
     </div>
        <!-- Social card card -->
 
-      <div class="Social-card  flex flex-col bg-indigo-900 rounded-xl pb-4">
+      <div class="Social-card card flex flex-col bg-indigo-900 rounded-xl pb-4">
       <div class="work-header flex justify-end bg-purple-600 rounded-t-xl z-0 h-16">
         <img src="images/icon-Social.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
       <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Social</p>
-          <p class="text-4xl">5hrs</p>
+          <p class="text-4xl "id="social-hours">5hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
           <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
-          <p class="text-slate-300 font-semi-bold">Last week - 10hrs</p>
+          <p class="text-slate-300 font-semi-bold" id="prev-social">Last week - 10hrs</p>
         </div>
       </div>
     </div>
        <!-- Self Care card card -->
 
-      <div class="Self-Care-card  flex flex-col bg-indigo-900 rounded-xl pb-4">
+      <div class="Self-Care-card card flex flex-col bg-indigo-900 rounded-xl pb-4">
       <div class="work-header flex justify-end bg-yellow-200 rounded-t-xl z-0 h-16">
         <img src="images/icon-self-care.svg" class="opacity-50 -mb-6 mr-4" alt="" />
       </div>
       <div class="time-info bg-indigo-900 rounded-xl -mt-2 z-10 flex items-center justify-between text-white md:flex-col md:items-start relative">
         <div class="time-category flex flex-col p-6 gap-2 justify-end">
           <p class="text-2xl">Self Care</p>
-          <p class="text-4xl">2hrs</p>
+          <p class="text-4xl "id="selfcare-hours">2hrs</p>
         </div>
         <div class="time-prev flex flex-col items-end gap-6 p-4">
           <p class="absolute top-8 right-4"><img src="images/icon-ellipsis.svg" alt=""></p>
-          <p class="text-slate-300 font-semi-bold">Last week - 2hrs</p>
+          <p class="text-slate-300 font-semi-bold" id="prev-selfcare">Last week - 2hrs</p>
         </div>
       </div>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </body>
 </html>
